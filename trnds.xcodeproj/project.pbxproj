@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		1B069648248B1F35004B8F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B069646248B1F35004B8F89 /* Main.storyboard */; };
 		1B06964A248B1F36004B8F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B069649248B1F36004B8F89 /* Assets.xcassets */; };
 		1B06964D248B1F36004B8F89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B06964B248B1F36004B8F89 /* LaunchScreen.storyboard */; };
+		1B06965D248C3761004B8F89 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B06965C248C3528004B8F89 /* Roboto-Regular.ttf */; };
+		E13EE24D5068EF6C2B2913E8 /* Pods_trnds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAF2EBF4DE25BE6BA9A5480 /* Pods_trnds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05E64B7E539832819DCFC756 /* Pods-trnds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trnds.release.xcconfig"; path = "Target Support Files/Pods-trnds/Pods-trnds.release.xcconfig"; sourceTree = "<group>"; };
 		1B06963D248B1F35004B8F89 /* trnds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trnds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B069640248B1F35004B8F89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B069642248B1F35004B8F89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		1B069649248B1F36004B8F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B06964C248B1F36004B8F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B06964E248B1F36004B8F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B06965C248C3528004B8F89 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		6DAF2EBF4DE25BE6BA9A5480 /* Pods_trnds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trnds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC2C3E6D3FA3AF3165519D2 /* Pods-trnds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trnds.debug.xcconfig"; path = "Target Support Files/Pods-trnds/Pods-trnds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13EE24D5068EF6C2B2913E8 /* Pods_trnds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15079A204792BC99E5F0D968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CC2C3E6D3FA3AF3165519D2 /* Pods-trnds.debug.xcconfig */,
+				05E64B7E539832819DCFC756 /* Pods-trnds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1B069634248B1F35004B8F89 = {
 			isa = PBXGroup;
 			children = (
 				1B06963F248B1F35004B8F89 /* trnds */,
 				1B06963E248B1F35004B8F89 /* Products */,
+				15079A204792BC99E5F0D968 /* Pods */,
+				BA7E9FD2CECFEF16274112B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +78,20 @@
 				1B069642248B1F35004B8F89 /* SceneDelegate.swift */,
 				1B069644248B1F35004B8F89 /* ViewController.swift */,
 				1B069646248B1F35004B8F89 /* Main.storyboard */,
+				1B06965C248C3528004B8F89 /* Roboto-Regular.ttf */,
 				1B069649248B1F36004B8F89 /* Assets.xcassets */,
 				1B06964B248B1F36004B8F89 /* LaunchScreen.storyboard */,
 				1B06964E248B1F36004B8F89 /* Info.plist */,
 			);
 			path = trnds;
+			sourceTree = "<group>";
+		};
+		BA7E9FD2CECFEF16274112B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DAF2EBF4DE25BE6BA9A5480 /* Pods_trnds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B069651248B1F36004B8F89 /* Build configuration list for PBXNativeTarget "trnds" */;
 			buildPhases = (
+				6D053E3C54F202DC8FF33362 /* [CP] Check Pods Manifest.lock */,
 				1B069639248B1F35004B8F89 /* Sources */,
 				1B06963A248B1F35004B8F89 /* Frameworks */,
 				1B06963B248B1F35004B8F89 /* Resources */,
+				700C1EA3FB246F62296D0755 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B06964D248B1F36004B8F89 /* LaunchScreen.storyboard in Resources */,
+				1B06965D248C3761004B8F89 /* Roboto-Regular.ttf in Resources */,
 				1B06964A248B1F36004B8F89 /* Assets.xcassets in Resources */,
 				1B069648248B1F35004B8F89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D053E3C54F202DC8FF33362 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-trnds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		700C1EA3FB246F62296D0755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trnds/Pods-trnds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trnds/Pods-trnds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trnds/Pods-trnds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B069639248B1F35004B8F89 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		1B069652248B1F36004B8F89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC2C3E6D3FA3AF3165519D2 /* Pods-trnds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		1B069653248B1F36004B8F89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E64B7E539832819DCFC756 /* Pods-trnds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
